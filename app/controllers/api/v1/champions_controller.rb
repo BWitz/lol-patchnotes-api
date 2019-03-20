@@ -1,5 +1,6 @@
 class Api::V1::ChampionsController < ApplicationController
     before_action :find_champion, only: [:update, :destroy]
+
     def index
         @champions = Champion.all
         render json: @champions
@@ -27,10 +28,10 @@ class Api::V1::ChampionsController < ApplicationController
     private
     
     def champion_params
-        params.require(:champion).permit(:name, :developer_commentary, :ability1, :ability2, :ability3, :ability4, :ability5, :change_summary, :last_patch_update)
+        params.require(:champion).permit(:name, :developer_commentary, :ability1, :ability2, :ability3, :ability4, :ability5, :change_summary, :last_patch_update, :icon_img_src, :splashart_img_src)
     end
     
     def find_champion
-        @champion = Champion.find(params[:id])
+        @champion = Champion.find_by(params[:name =>  your_custom_name])
     end
 end
