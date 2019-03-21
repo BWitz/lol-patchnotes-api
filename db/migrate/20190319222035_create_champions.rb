@@ -10,7 +10,7 @@ class CreateChampions < ActiveRecord::Migration[5.2]
       t.string :ability3
       t.string :ability4
       t.string :ability5
-      t.text :change_summary
+      t.text :patch_summary
       t.integer :last_patch_update
 
       t.timestamps

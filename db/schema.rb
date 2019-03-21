@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_19_222035) do
+ActiveRecord::Schema.define(version: 2019_03_20_012429) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,15 +24,15 @@ ActiveRecord::Schema.define(version: 2019_03_19_222035) do
 
   create_table "champions", force: :cascade do |t|
     t.string "name"
-    t.string "developer_commentary"
-    t.string "img_src1"
-    t.string "img_src2"
+    t.text "developer_commentary"
+    t.string "icon_img_src"
+    t.string "splashart_img_src"
     t.string "ability1"
     t.string "ability2"
     t.string "ability3"
     t.string "ability4"
     t.string "ability5"
-    t.string "change_summary"
+    t.text "patch_summary"
     t.integer "last_patch_update"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -41,9 +41,10 @@ ActiveRecord::Schema.define(version: 2019_03_19_222035) do
   create_table "items", force: :cascade do |t|
     t.string "name"
     t.string "img_src"
-    t.text "change_summary"
+    t.text "patch_summary"
     t.text "developer_commentary"
-    t.text "changes"
+    t.integer "last_patch_update"
+    t.text "details"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

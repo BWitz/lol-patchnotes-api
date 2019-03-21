@@ -3,9 +3,10 @@ class CreateItems < ActiveRecord::Migration[5.2]
     create_table :items do |t|
       t.string :name
       t.string :img_src
-      t.text :change_summary
+      t.text :patch_summary
       t.text :developer_commentary
-      t.text :changes
+      t.integer :last_patch_update
+      t.text :details
 
       t.timestamps
     end
