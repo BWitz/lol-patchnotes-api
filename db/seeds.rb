@@ -1,6 +1,15 @@
-Champion.create(name:'championTest', developer_commentary: 'championTest', icon_img_src:'championTest', splashart_img_src: 'championTest', ability1: 'championTest', ability2: 'championTest', ability3:'championTest', ability4: 'championTest', ability5: 'championTest', patch_summary: 'championTest', last_patch_update: 1.2);
+# Champion.create(name:'championTest', developer_commentary: 'championTest', icon_img_src:'championTest', splashart_img_src: 'championTest', ability1: 'championTest', ability2: 'championTest', ability3:'championTest', ability4: 'championTest', ability5: 'championTest', patch_summary: 'championTest', last_patch_update: 1.2);
+# Item.create(name: 'itemTest', img_src: 'itemTest', patch_summary: 'itemTest', developer_commentary: 'itemTest', last_patch_update: 2.4, details: 'itemTest');
+# ChampionItem.create(champion_id: 1, item_id: 1)
 
+# The seeds above were used for testing our database tables.
 
-Item.create(name: 'itemTest', img_src: 'itemTest', patch_summary: 'itemTest', developer_commentary: 'itemTest', last_patch_update: 2.4, details: 'itemTest');
+# Template for champion creation: Champion.create(name:``, developer_commentary: ``, icon_img_src:``, splashart_img_src: ``, ability1: ``, ability2: ``, ability3:``, ability4: ``, ability5: ``, patch_summary: ``, last_patch_update: )
 
-ChampionItem.create(champion_id: 1, item_id: 1)
+# Notes: General patch information is taken from the patch notes. Image sources are taken from the champion show page, along with the ability names but they need to be formatted to match general styling of ability-name text within this database. Champion seeds are listed in alphabetical order.
+
+Champion.create(name:`Kayle`, developer_commentary: `Kayle is looking quite strong, especially as players learn how to play her, but her W and E can feel awkward since she typically builds a lot of attack speed. We're fixing that as well as buffing up her W to be a better reactive defense in lane (instant haste = easier dodging). To compensate, we're hitting her late game power in ways that make her a bit more item dependent.`, icon_img_src:`https://ddragon.leagueoflegends.com/cdn/9.6.1/img/champion/Kayle.png`, splashart_img_src: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayle_0.jpg`, ability1: `Passive: Divine Ascent`, ability2: `Q: Radiant Blast`, ability3:`W: Celestial Blessing`, ability4: `E: Starfire Spellblade`, ability5: `R: Divine Judgement`, patch_summary: `Attack damage growth and attack speed growth decreased. W movement speed ratio decreased. Default adaptive swapped. E and W responsiveness increased.`, last_patch_update: 9.5 )
+
+Champion.create(name:`Neeko`, developer_commentary: `Attack speed growth increased. W no longer procs twice in a row at very high attack speeds.`, icon_img_src:`https://ddragon.leagueoflegends.com/cdn/9.6.1/img/champion/Neeko.png`, splashart_img_src: `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_0.jpg`, ability1: `Passive: Inherent Glamour`, ability2: `Q: Blooming Burst`, ability3:`W: Shapesplitter`, ability4: `E: Tangle-Barbs`, ability5: `R: Pop Blossom`, patch_summary: `Attack speed growth increased. W no longer procs twice in a row at very high attack speeds.`, last_patch_update: 9.5 )
+
+Champion.create(name:`Ornn`, developer_commentary: ``, icon_img_src:``, splashart_img_src: ``, ability1: ``, ability2: ``, ability3:``, ability4: ``, ability5: ``, patch_summary: ``, last_patch_update: )
