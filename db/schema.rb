@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2019_03_20_012429) do
 
   create_table "champions", force: :cascade do |t|
     t.string "name"
-    t.text "developer_commentary"
+    t.string "developer_commentary"
     t.string "icon_img_src"
     t.string "splashart_img_src"
     t.string "ability1"
@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 2019_03_20_012429) do
     t.text "patch_summary"
     t.text "developer_commentary"
     t.integer "last_patch_update"
-    t.text "details"
+    t.integer "details"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
