@@ -32,6 +32,6 @@ class Api::V1::ChampionsController < ApplicationController
     end
     
     def find_champion
-        @champion = Champion.find_by(params[:name =>  your_custom_name])
+        @champion = Champion.find(params[:id])
     end
 end
